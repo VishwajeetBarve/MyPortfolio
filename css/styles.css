@@ -1,0 +1,381 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+li{
+  list-style-type: none;
+    /* display: inline; */
+}
+
+main-div{
+  position: relative;
+}
+
+#preloader {
+ background: #000 url(CBRC.gif) no-repeat center center;
+ background-size: 30%;
+ height: 100vh;
+ width :100%;
+ position: fixed;
+ z-index: 100;
+ visibility: visible;
+}
+
+.hide-preloader{
+  z-index: -100;
+  visibility: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #6E85B7 ;
+  font-family: sans-serif;
+}
+
+
+.header{
+  
+  text-align: left;
+  /* height:650px; */
+  padding: 30px 0 0 60px;
+  color: white;
+  text-transform: capitalize;
+  /* background-image: url(Img1.jpg);
+  background-repeat:no-repeat;
+  background-size:cover; */
+
+}
+
+nav {
+  background-color: #6E85B7;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  /* height: 70px; */
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  color: grey;
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: blue;
+  transform: rotate(90deg);
+}
+.logo {
+  height: 50px;
+  width: 50px;
+}
+.links a {
+  color: white;
+  font-size: 2rem;
+  text-transform: capitalize;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.links a:hover{
+padding: 1rem;
+background: #87CEEB;
+color: white;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  transition:all 0.3s linear;
+
+}
+.show-links {
+  height:10.4rem;
+  background: #293462;
+
+}
+.welcomeName{
+  font-family: 'Raleway', sans-serif;
+  line-height: normal;
+  font-size: 3rem;
+
+}
+.position{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.7rem;
+  text-align: left;
+  line-height: 2.2rem;
+  opacity: 0.8;
+  padding : 20px 0 0 0;
+}
+
+.hello-btn{
+  width: 200px;
+  height: 50px;
+  font-size: 1rem;
+  color: #fff;
+  margin: 15px 0 10px 0px;
+  border: solid 4px;
+  border-color: #000;
+  font-family: 'Raleway', sans-serif;
+  transition: all 01s;
+}
+.hello-btn a{
+  text-decoration: none;
+  color: #fff;
+}
+.hello-btn:hover{
+  font-size: 1.5rem;
+  width: 210px;
+  height: 60px;
+}
+
+.mySkills{
+  background-color: #87CEEB ;
+  text-align: center;
+  padding: 25px 30px 0 30px ;
+  
+}
+
+.skillHeading{
+  font-size: 2.5rem;
+  font-family : 'Roboto Condensed', sans-serif;
+}
+
+.container{ 
+  width: 100%;
+}
+
+.container1{ 
+  padding: 10px 5px 5px 0px;  
+  
+}
+.container2{ 
+  padding: 40px 5px 50px 0px;  
+  
+}
+
+.skillLogo{
+ 
+  height : 140px;
+  width : 140px;
+ transition: all 0.3s linear;
+}
+
+.skillLogo:hover{
+
+  height : 120px;
+  width : 120px;
+}
+
+h5{
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+.projects{
+  background: #77A0C8;
+  text-align: center;
+  padding: 30px;
+  /* height: 500px; */
+  width: 100%;
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.projectHeading{
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: capitalize;
+  padding: 0 0 30px 0;
+  text-align: center;
+}
+
+.projectsButton{
+  width: 200px;
+  height: 50px;
+  font-size: 1rem;
+  color: #fff;
+  margin: 15px 0 10px 0px;
+  border: solid 4px;
+  border-color: #000;
+  font-family: 'Raleway', sans-serif;
+  transition: all 01s;
+}
+.projectsButton a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.projectsButton:hover {
+  background-color: #6E85B7;
+  border-color: #6E85B7;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer{
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  height: 100px;
+}
+
+.footerText{
+padding: 16px 0 25px 0;
+font-size: 1.8rem;
+font-style: italic;
+text-transform: uppercase;
+}
+
+
+.footerLogos li{
+  display: inline;
+  padding: 0 45px;
+  font-size: 2rem;
+  transition: font-size 0.3s;
+  text-decoration: none;
+  color: #000;
+}
+
+.footerLogos li :hover{
+  color: white;
+}
+
+.copyrightText{
+padding: 10px 0 10px 0;
+font-size: 1rem;
+
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+  
+  nav {
+    background-color: #6E85B7;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    height: 90px;
+  }
+
+
+  .nav-center {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 90px;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links {
+    height: auto;
+    display: flex;
+    padding: 10px 30px 0 0;
+    background-color: transparent;
+  }
+
+  .links a {
+    padding: 0 20px;
+    margin: 0 0.5rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: font-size 0.5s;
+    color: black;
+  }
+  .links a:hover {
+    padding: 0 20px;
+    background: transparent;
+    font-size: 2.3rem;
+  }
+  .main-div{
+    min-height: 650px;
+  }
+  .header{
+    text-align: left;
+    /* height: 550px; */
+    
+    padding: 30px 0 0 60px;
+    color: white;
+    text-transform: capitalize;
+    /* background-image: url(Img1.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; */
+    position: relative;
+  }
+  .welcomeName{
+    font-family: 'Raleway', sans-serif;
+    line-height: normal;
+    font-size: 5rem;
+  
+  }
+  .position{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    text-align: left;
+    line-height: 3rem;
+    opacity: 0.8;
+    padding: 20px 0 0 0;
+    transition: all 0.3s linear;
+  }
+  
+  .top-link{
+    font-size: 2rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background: #231955;
+    width: 4rem;
+    height: 4rem;
+    padding: 15px 25px 25px 20px;
+    border-radius: 0.5rem;
+    color: white;
+    visibility: hidden;
+    z-index: -100;
+    text-decoration: none;
+    animation: bounce 2s ease-in-out infinite;
+  }
+
+   .show-toplink{
+    visibility:visible;
+    z-index: 10;
+   }
+
+   @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+
+}
+
+}
+
+
+
+
+/*  */
